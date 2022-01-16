@@ -1,4 +1,9 @@
 $(document).ready(function () {
+  $("div").on("click", '#delete', function() {
+    const taskToDelete = $(this).parent();
+    taskToDelete.remove();
+  });
+
   $("#addTask").click(function() { // click event handler
     if ($(".textBox").val() != "") {
       const taskElement = $("<div> </div>");
