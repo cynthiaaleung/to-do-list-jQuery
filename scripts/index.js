@@ -25,7 +25,7 @@ $(document).ready(function() {
   $("div").on("click", "#done", function() { // use on method because button element is dynamically created so $("#done").click() won't work
     const taskElement = $(this).parent(); // this extracts the whole div
 
-    taskElement.fadeOut(1000, function() {
+    taskElement.fadeOut(500, function() {
   
       $(this).remove();
 
@@ -33,7 +33,7 @@ $(document).ready(function() {
   
       $(".completed").append(detachedTask); // now append task to "Done" section
 
-      detachedTask.fadeIn(1000); // task fades in to "Done" section
+      detachedTask.fadeIn(500); // task fades in to "Done" section
     });
   });
 
