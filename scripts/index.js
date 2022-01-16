@@ -1,5 +1,16 @@
 $(document).ready(function () {
-  $("div").on("click", '#delete', function() {
+
+  $("div").on("click", "#done", function() {// use on method because button element is dynamically created so $("#done").click() won't work
+    const taskElement = $(this).parent(); // this extracts the whole div
+
+    $(this).remove();
+
+    const detachedTask = taskElement.detach(); //detach() retains event handlers
+
+    $(".completed").append(detachedTask); // now move task to "Done" section
+  });
+
+  $("div").on("click", '#delete', function() { // use on method because button element is dynamically created so $("#delete").click() won't work
     const taskToDelete = $(this).parent();
     taskToDelete.remove();
   });
