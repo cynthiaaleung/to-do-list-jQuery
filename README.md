@@ -3,21 +3,6 @@
 
 This is an assignment for "The Complete Guide to jQuery" course on Educative.io. The main objective is to practise using jQuery and AJAX. Users can make a GET request to a mock api to display tasks, add their own tasks, mark tasks as done and also delete tasks. 
 
-## What I learned from this assignment
-
-  - event bubbling and stop propogation
-  - event handlers
-  - traversing through the DOM tree
-  - add, modify, and delete DOM elements
-  - effects: visibility, fading, sliding, animations
-  - callback functions for effects and animations
-  - chaining different effects
-  - AJAX GET and POST methods in jQuery
-
-## Tech Stack
-
-- JavaScript, jQuery, AJAX, HTML, SCSS
-
 ## Final Product
 
 ### GET request to a mock api
@@ -39,4 +24,21 @@ Here the new "update resume" task has been added to the "To Do" section. Users c
 Users can delete a task (e.g. "reply to emails") by clicking the delete button beside the task and it will be completely removed.
 
 !["delete-task"](https://github.com/cynthiaaleung/to-do-list-jQuery/blob/master/docs/delete-task.png?raw=true)
+
+## Tech Stack
+
+- JavaScript, jQuery, AJAX, HTML, SCSS
+
+## What I learned from this project
+
+  - event bubbling and stop propogation
+  - event handlers
+  - traversing through the DOM tree
+  - add, modify, and delete DOM elements
+  - effects: visibility, fading, sliding, animations
+  - callback functions for effects and animations
+  - chaining different effects
+  - AJAX GET and POST methods in jQuery
+
+
 
